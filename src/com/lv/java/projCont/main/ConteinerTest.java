@@ -43,12 +43,14 @@ public class ConteinerTest {
     }
 
     public static void createConteiner(Conteiner cnt[], int daudz) {
-        //??? parbaude uz Drum vai Box
-        for (int i = 0; i < daudz; i++) {
-            int height = randomInt();
-            int radius = randomInt();
-            cnt[i] = new Drum(height, radius);
-            printConteinerInfo(cnt[i]);
+        if (cnt[daudz] instanceof Drum) {
+            for (int i = 0; i < daudz; i++) {
+                int height = randomInt();
+                int radius = randomInt();
+                cnt[i] = new Drum(height, radius);
+                printConteinerInfo(cnt[i]);
+            }
+            // if (cnt[daudz] instanof Box){}
 
         }
     }
