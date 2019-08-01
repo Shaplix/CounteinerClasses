@@ -4,6 +4,8 @@ import com.lv.java.projCont.conteiner.Box;
 import com.lv.java.projCont.conteiner.Conteiner;
 import com.lv.java.projCont.conteiner.Drum;
 
+import java.util.Random;
+
 public class ConteinerTest {
 
     public static void main(String[] args) {
@@ -20,6 +22,15 @@ public class ConteinerTest {
 
         boolean b = box.equalCapacity(drum);
         printConteinerInfo(b);
+
+        int daudz = 10;
+
+        Drum cnt[] = new Drum[daudz];
+        createConteiner(cnt, daudz);
+
+
+
+
     }
     public static void printConteinerInfo (Conteiner n){
         System.out.println(n.toString());
@@ -29,5 +40,21 @@ public class ConteinerTest {
     }
     public static void printConteinerInfo (boolean n){
         System.out.println(n);
+    }
+
+    public static void createConteiner(Conteiner cnt[], int daudz) {
+        //??? parbaude uz Drum vai Box
+        for (int i = 0; i < daudz; i++) {
+            int height = randomInt();
+            int radius = randomInt();
+            cnt[i] = new Drum(height, radius);
+            printConteinerInfo(cnt[i]);
+
+        }
+    }
+
+    public static int randomInt() {
+        Random rnd = new Random();
+        return rnd.nextInt(37);
     }
 }

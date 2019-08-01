@@ -1,6 +1,6 @@
 package com.lv.java.projCont.conteiner;
 
-public interface hasColor {
+public interface HasColor {
 
     String  getColor();
 }

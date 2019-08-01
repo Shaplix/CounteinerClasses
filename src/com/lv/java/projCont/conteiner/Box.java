@@ -1,6 +1,6 @@
 package com.lv.java.projCont.conteiner;
 
-public class Box extends Equality {
+public class Box extends AbsConteiner {
 
     private int lenght;
     private int width;

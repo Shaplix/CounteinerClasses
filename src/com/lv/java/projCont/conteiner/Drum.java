@@ -1,7 +1,7 @@
 package com.lv.java.projCont.conteiner;
 
 
-public class Drum extends Equality implements hasColor {
+public class Drum extends AbsConteiner implements HasColor {
 
     private int height;
     private int radius;
