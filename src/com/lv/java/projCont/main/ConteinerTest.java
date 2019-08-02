@@ -27,6 +27,7 @@ public class ConteinerTest {
 
         Drum cnt[] = new Drum[daudz];
         createConteiner(cnt, daudz);
+        ///averageValueOfCapacityConteiner(cnt, daudz);
 
 
 
